@@ -21,13 +21,12 @@
             min-height: 100vh;
         }
 
-        /* هدر سایت */
         header {
             background: linear-gradient(135deg, #173f7a, #2563a8);
             color: white;
             text-align: center;
             padding: 60px 20px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
         }
 
         header h1 {
@@ -39,23 +38,20 @@
         header p {
             font-size: 18px;
             line-height: 2;
-            opacity: 0.95;
         }
 
-        /* محتوای اصلی */
         .container {
-            max-width: 1100px;
+            max-width: 1050px;
             margin: 50px auto;
             padding: 0 20px;
         }
 
-        /* کارت */
         .card {
             background: white;
             border-radius: 25px;
             padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
             border: 1px solid #e5e7eb;
         }
 
@@ -77,11 +73,9 @@
             margin-bottom: 30px;
         }
 
-        /* دکمه‌ها */
         .buttons {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 15px;
             flex-wrap: wrap;
         }
@@ -93,38 +87,36 @@
             border-radius: 14px;
             font-size: 16px;
             font-weight: bold;
-            transition: all 0.25s ease;
+            transition: 0.25s;
         }
 
-        .btn-view {
+        .view {
             background: #2563a8;
             color: white;
         }
 
-        .btn-view:hover {
+        .view:hover {
             background: #173f7a;
-            transform: translateY(-4px);
-            box-shadow: 0 8px 18px rgba(37, 99, 168, 0.3);
+            transform: translateY(-3px);
         }
 
-        .btn-download {
+        .download {
             background: #e8f1ff;
             color: #173f7a;
             border: 1px solid #bfd4f2;
         }
 
-        .btn-download:hover {
+        .download:hover {
             background: #d8e8ff;
-            transform: translateY(-4px);
+            transform: translateY(-3px);
         }
 
-        /* بخش توضیحات */
         .info {
             margin-top: 30px;
             background: white;
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.06);
         }
 
         .info h3 {
@@ -146,7 +138,6 @@
             margin-left: 10px;
         }
 
-        /* پاورقی */
         footer {
             text-align: center;
             padding: 35px 20px;
@@ -154,7 +145,6 @@
             font-size: 14px;
         }
 
-        /* نمایش در موبایل */
         @media (max-width: 600px) {
 
             header {
@@ -184,10 +174,8 @@
     </style>
 </head>
 
-
 <body>
 
-    <!-- عنوان سایت -->
     <header>
 
         <h1>
@@ -201,10 +189,8 @@
     </header>
 
 
-    <!-- محتوای اصلی -->
     <main class="container">
 
-        <!-- کارت PDF -->
         <section class="card">
 
             <div class="icon">
@@ -216,25 +202,26 @@
             </h2>
 
             <p>
-                مجموعه‌ای از حل‌های تشریحی و آموزشی سوالات کنکور تجربی
-                با توضیح مرحله‌به‌مرحله برای یادگیری بهتر.
+                مجموعه حل‌های تشریحی و آموزشی سوالات کنکور تجربی
+                با توضیح مرحله‌به‌مرحله و نکات مهم.
             </p>
 
             <div class="buttons">
 
                 <!-- مشاهده PDF -->
                 <a
-                    href="A.pdf"
+                    href="./A.pdf"
                     target="_blank"
-                    class="btn btn-view">
+                    rel="noopener noreferrer"
+                    class="btn view">
                     📄 مشاهده PDF
                 </a>
 
                 <!-- دانلود PDF -->
                 <a
-                    href="A.pdf"
-                    download
-                    class="btn btn-download">
+                    href="./A.pdf"
+                    download="A.pdf"
+                    class="btn download">
                     ⬇️ دانلود PDF
                 </a>
 
@@ -243,11 +230,10 @@
         </section>
 
 
-        <!-- ویژگی‌های جزوه -->
         <section class="info">
 
             <h3>
-                ✨ ویژگی‌های این مجموعه
+                ✨ ویژگی‌های مجموعه
             </h3>
 
             <ul>
@@ -261,11 +247,11 @@
                 </li>
 
                 <li>
-                    مناسب برای جمع‌بندی و مرور
+                    بررسی نکات مهم هر سؤال
                 </li>
 
                 <li>
-                    بررسی نکات مهم و آموزشی سوالات
+                    مناسب برای مرور و جمع‌بندی کنکور
                 </li>
 
             </ul>
@@ -275,7 +261,6 @@
     </main>
 
 
-    <!-- پایین سایت -->
     <footer>
 
         © حل تشریحی سوالات کنکور تجربی
